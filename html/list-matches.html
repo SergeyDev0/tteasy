@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/list-matches.css">
+    <title>TTeasy</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper__header-logo">
+            <a href="../index.html">
+                <img class="header-logo" src="../icons/logo.svg" alt="logo">
+            </a>
+        </div>
+        <nav class="header-nav">
+            <a href="#" class="header__nav-link">Статистика</a>
+            <a href="#" class="header__nav-link">Матчи</a>
+            <a href="#" class="header__nav-link">Игроки</a>
+            <a href="#" class="header__nav-link">Лента</a>
+        </nav>
+        <nav class="user-nav">
+            <button class="header-notifications"></button>
+            <button class="header-avatar"></button>
+        </nav>
+    </header>
+    <main>
+        <h1 class="list-matches__title">Список матчей</h1>
+        <div class="list-matches__wrapper-nav">
+            <input class="list-matches__search" type="text" placeholder="Поиск">
+            <nav class="list-matches__nav">
+                <h3>стр. <span id="currentPage">1</span> из <span id="totalPages">2</span></h3>
+                <div class="navigation-pages">
+                    <button class="previous-button"></button>
+                    <button class="next-button"></button>
+                </div>
+            </nav>
+        </div>
+        <ul class="list-matches">
+            <li class="list-matches__header">
+                <div class="list-matches__wrapper__header-titles">
+                    <h3 class="list-matches__titles id">Id</h3>
+                    <h3 class="list-matches__titles name">Игрок</h3>
+                    <h3 class="list-matches__titles matches">Матчи</h3>
+                    <h3 class="list-matches__titles victory">Результат</h3>
+                </div>
+                <button class="list-matches__button-settings"></button>
+            </li>
+
+            <li class="list-matches__item">
+                <section class="list-matches__wrapper-content">
+                    <div class="list-matches__content">
+                        <h3 class="list-matches__titles id">1</h3>
+                        <h3 class="list-matches__titles name">Baka Baka</h3>
+                        <h3 class="list-matches__titles matches">1</h3>
+                        <h3 class="list-matches__titles victory">Поражение</h3>
+                    </div>
+                    <div class="list-matches__panel">
+                        <button class="panel-button share-btn"></button>
+                        <button class="panel-button delete-btn"></button>
+                        <button class="panel-button open-btn"></button>
+                    </div>
+                </section>
+                <section class="list-matches__accordion">
+                    <div class="match-video"></div>
+                    <aside class="match-content">
+                        <h4 class="match-info">Дата: <span class="match-value">11.04.2022</span></h4>
+                        <h4 class="match-info">Игроки: <span class="match-value">Baka Baka, Uki Uki</span></h4>
+                        <h4 class="match-info">Продолжительность: <span class="match-value">1 час 43 минуты</span></h4>
+                        <h4 class="match-info">Счёт: <span class="match-value">2:1</span></h4>
+                    </aside>
+                </section>
+            </li>
+
+            <li class="list-matches__item">
+                <section class="list-matches__wrapper-content">
+                    <div class="list-matches__content">
+                        <h3 class="list-matches__titles id">1</h3>
+                        <h3 class="list-matches__titles name">Baka Baka</h3>
+                        <h3 class="list-matches__titles matches">1</h3>
+                        <h3 class="list-matches__titles victory">Поражение</h3>
+                    </div>
+                    <div class="list-matches__panel">
+                        <button class="panel-button share-btn"></button>
+                        <button class="panel-button delete-btn"></button>
+                        <button class="panel-button open-btn"></button>
+                    </div>
+                </section>
+                <section class="list-matches__accordion">
+                    <div class="match-video"></div>
+                    <aside class="match-content">
+                        <h4 class="match-info">Дата: <span class="match-value">11.04.2022</span></h4>
+                        <h4 class="match-info">Игроки: <span class="match-value">Baka Baka, Uki Uki</span></h4>
+                        <h4 class="match-info">Продолжительность: <span class="match-value">1 час 43 минуты</span></h4>
+                        <h4 class="match-info">Счёт: <span class="match-value">2:1</span></h4>
+                    </aside>
+                </section>
+            </li>
+
+            <li class="list-matches__item">
+                <section class="list-matches__wrapper-content">
+                    <div class="list-matches__content">
+                        <h3 class="list-matches__titles id">1</h3>
+                        <h3 class="list-matches__titles name">Baka Baka</h3>
+                        <h3 class="list-matches__titles matches">1</h3>
+                        <h3 class="list-matches__titles victory">Поражение</h3>
+                    </div>
+                    <div class="list-matches__panel">
+                        <button class="panel-button share-btn"></button>
+                        <button class="panel-button delete-btn"></button>
+                        <button class="panel-button open-btn"></button>
+                    </div>
+                </section>
+                <section class="list-matches__accordion">
+                    <div class="match-video"></div>
+                    <aside class="match-content">
+                        <h4 class="match-info">Дата: <span class="match-value">11.04.2022</span></h4>
+                        <h4 class="match-info">Игроки: <span class="match-value">Baka Baka, Uki Uki</span></h4>
+                        <h4 class="match-info">Продолжительность: <span class="match-value">1 час 43 минуты</span></h4>
+                        <h4 class="match-info">Счёт: <span class="match-value">2:1</span></h4>
+                    </aside>
+                </section>
+            </li>
+
+            <li class="list-matches__item">
+                <section class="list-matches__wrapper-content">
+                    <div class="list-matches__content">
+                        <h3 class="list-matches__titles id">1</h3>
+                        <h3 class="list-matches__titles name">Baka Baka</h3>
+                        <h3 class="list-matches__titles matches">1</h3>
+                        <h3 class="list-matches__titles victory">Поражение</h3>
+                    </div>
+                    <div class="list-matches__panel">
+                        <button class="panel-button share-btn"></button>
+                        <button class="panel-button delete-btn"></button>
+                        <button class="panel-button open-btn"></button>
+                    </div>
+                </section>
+                <section class="list-matches__accordion">
+                    <div class="match-video"></div>
+                    <aside class="match-content">
+                        <h4 class="match-info">Дата: <span class="match-value">11.04.2022</span></h4>
+                        <h4 class="match-info">Игроки: <span class="match-value">Baka Baka, Uki Uki</span></h4>
+                        <h4 class="match-info">Продолжительность: <span class="match-value">1 час 43 минуты</span></h4>
+                        <h4 class="match-info">Счёт: <span class="match-value">2:1</span></h4>
+                    </aside>
+                </section>
+            </li>
+
+            <li class="list-matches__item">
+                <section class="list-matches__wrapper-content">
+                    <div class="list-matches__content">
+                        <h3 class="list-matches__titles id">1</h3>
+                        <h3 class="list-matches__titles name">Baka Baka</h3>
+                        <h3 class="list-matches__titles matches">1</h3>
+                        <h3 class="list-matches__titles victory">Поражение</h3>
+                    </div>
+                    <div class="list-matches__panel">
+                        <button class="panel-button share-btn"></button>
+                        <button class="panel-button delete-btn"></button>
+                        <button class="panel-button open-btn"></button>
+                    </div>
+                </section>
+                <section class="list-matches__accordion">
+                    <div class="match-video"></div>
+                    <aside class="match-content">
+                        <h4 class="match-info">Дата: <span class="match-value">11.04.2022</span></h4>
+                        <h4 class="match-info">Игроки: <span class="match-value">Baka Baka, Uki Uki</span></h4>
+                        <h4 class="match-info">Продолжительность: <span class="match-value">1 час 43 минуты</span></h4>
+                        <h4 class="match-info">Счёт: <span class="match-value">2:1</span></h4>
+                    </aside>
+                </section>
+            </li>
+
+            <li class="list-matches__item">
+                <section class="list-matches__wrapper-content">
+                    <div class="list-matches__content">
+                        <h3 class="list-matches__titles id">1</h3>
+                        <h3 class="list-matches__titles name">Baka Baka</h3>
+                        <h3 class="list-matches__titles matches">1</h3>
+                        <h3 class="list-matches__titles victory">Поражение</h3>
+                    </div>
+                    <div class="list-matches__panel">
+                        <button class="panel-button share-btn"></button>
+                        <button class="panel-button delete-btn"></button>
+                        <button class="panel-button open-btn"></button>
+                    </div>
+                </section>
+                <section class="list-matches__accordion">
+                    <div class="match-video"></div>
+                    <aside class="match-content">
+                        <h4 class="match-info">Дата: <span class="match-value">11.04.2022</span></h4>
+                        <h4 class="match-info">Игроки: <span class="match-value">Baka Baka, Uki Uki</span></h4>
+                        <h4 class="match-info">Продолжительность: <span class="match-value">1 час 43 минуты</span></h4>
+                        <h4 class="match-info">Счёт: <span class="match-value">2:1</span></h4>
+                    </aside>
+                </section>
+            </li>
+
+            <li class="list-matches__item">
+                <section class="list-matches__wrapper-content">
+                    <div class="list-matches__content">
+                        <h3 class="list-matches__titles id">1</h3>
+                        <h3 class="list-matches__titles name">Baka Baka</h3>
+                        <h3 class="list-matches__titles matches">1</h3>
+                        <h3 class="list-matches__titles victory">Поражение</h3>
+                    </div>
+                    <div class="list-matches__panel">
+                        <button class="panel-button share-btn"></button>
+                        <button class="panel-button delete-btn"></button>
+                        <button class="panel-button open-btn"></button>
+                    </div>
+                </section>
+                <section class="list-matches__accordion">
+                    <div class="match-video"></div>
+                    <aside class="match-content">
+                        <h4 class="match-info">Дата: <span class="match-value">11.04.2022</span></h4>
+                        <h4 class="match-info">Игроки: <span class="match-value">Baka Baka, Uki Uki</span></h4>
+                        <h4 class="match-info">Продолжительность: <span class="match-value">1 час 43 минуты</span></h4>
+                        <h4 class="match-info">Счёт: <span class="match-value">2:1</span></h4>
+                    </aside>
+                </section>
+            </li>
+
+            <li class="list-matches__item">
+                <section class="list-matches__wrapper-content">
+                    <div class="list-matches__content">
+                        <h3 class="list-matches__titles id">1</h3>
+                        <h3 class="list-matches__titles name">Baka Baka</h3>
+                        <h3 class="list-matches__titles matches">1</h3>
+                        <h3 class="list-matches__titles victory">Поражение</h3>
+                    </div>
+                    <div class="list-matches__panel">
+                        <button class="panel-button share-btn"></button>
+                        <button class="panel-button delete-btn"></button>
+                        <button class="panel-button open-btn"></button>
+                    </div>
+                </section>
+                <section class="list-matches__accordion">
+                    <div class="match-video"></div>
+                    <aside class="match-content">
+                        <h4 class="match-info">Дата: <span class="match-value">11.04.2022</span></h4>
+                        <h4 class="match-info">Игроки: <span class="match-value">Baka Baka, Uki Uki</span></h4>
+                        <h4 class="match-info">Продолжительность: <span class="match-value">1 час 43 минуты</span></h4>
+                        <h4 class="match-info">Счёт: <span class="match-value">2:1</span></h4>
+                    </aside>
+                </section>
+            </li>
+
+            <li class="list-matches__item">
+                <section class="list-matches__wrapper-content">
+                    <div class="list-matches__content">
+                        <h3 class="list-matches__titles id">1</h3>
+                        <h3 class="list-matches__titles name">Baka Baka</h3>
+                        <h3 class="list-matches__titles matches">1</h3>
+                        <h3 class="list-matches__titles victory">Поражение</h3>
+                    </div>
+                    <div class="list-matches__panel">
+                        <button class="panel-button share-btn"></button>
+                        <button class="panel-button delete-btn"></button>
+                        <button class="panel-button open-btn"></button>
+                    </div>
+                </section>
+                <section class="list-matches__accordion">
+                    <div class="match-video"></div>
+                    <aside class="match-content">
+                        <h4 class="match-info">Дата: <span class="match-value">11.04.2022</span></h4>
+                        <h4 class="match-info">Игроки: <span class="match-value">Baka Baka, Uki Uki</span></h4>
+                        <h4 class="match-info">Продолжительность: <span class="match-value">1 час 43 минуты</span></h4>
+                        <h4 class="match-info">Счёт: <span class="match-value">2:1</span></h4>
+                    </aside>
+                </section>
+            </li>
+
+            <li class="list-matches__item">
+                <section class="list-matches__wrapper-content">
+                    <div class="list-matches__content">
+                        <h3 class="list-matches__titles id">1</h3>
+                        <h3 class="list-matches__titles name">Baka Baka</h3>
+                        <h3 class="list-matches__titles matches">1</h3>
+                        <h3 class="list-matches__titles victory">Поражение</h3>
+                    </div>
+                    <div class="list-matches__panel">
+                        <button class="panel-button share-btn"></button>
+                        <button class="panel-button delete-btn"></button>
+                        <button class="panel-button open-btn"></button>
+                    </div>
+                </section>
+                <section class="list-matches__accordion">
+                    <div class="match-video"></div>
+                    <aside class="match-content">
+                        <h4 class="match-info">Дата: <span class="match-value">11.04.2022</span></h4>
+                        <h4 class="match-info">Игроки: <span class="match-value">Baka Baka, Uki Uki</span></h4>
+                        <h4 class="match-info">Продолжительность: <span class="match-value">1 час 43 минуты</span></h4>
+                        <h4 class="match-info">Счёт: <span class="match-value">2:1</span></h4>
+                    </aside>
+                </section>
+            </li>
+
+            <li class="list-matches__item">
+                <section class="list-matches__wrapper-content">
+                    <div class="list-matches__content">
+                        <h3 class="list-matches__titles id">1</h3>
+                        <h3 class="list-matches__titles name">Baka Baka</h3>
+                        <h3 class="list-matches__titles matches">1</h3>
+                        <h3 class="list-matches__titles victory">Поражение</h3>
+                    </div>
+                    <div class="list-matches__panel">
+                        <button class="panel-button share-btn"></button>
+                        <button class="panel-button delete-btn"></button>
+                        <button class="panel-button open-btn"></button>
+                    </div>
+                </section>
+                <section class="list-matches__accordion">
+                    <div class="match-video"></div>
+                    <aside class="match-content">
+                        <h4 class="match-info">Дата: <span class="match-value">11.04.2022</span></h4>
+                        <h4 class="match-info">Игроки: <span class="match-value">Baka Baka, Uki Uki</span></h4>
+                        <h4 class="match-info">Продолжительность: <span class="match-value">1 час 43 минуты</span></h4>
+                        <h4 class="match-info">Счёт: <span class="match-value">2:1</span></h4>
+                    </aside>
+                </section>
+            </li>
+
+            <li class="list-matches__item">
+                <section class="list-matches__wrapper-content">
+                    <div class="list-matches__content">
+                        <h3 class="list-matches__titles id">1</h3>
+                        <h3 class="list-matches__titles name">Baka Baka</h3>
+                        <h3 class="list-matches__titles matches">1</h3>
+                        <h3 class="list-matches__titles victory">Поражение</h3>
+                    </div>
+                    <div class="list-matches__panel">
+                        <button class="panel-button share-btn"></button>
+                        <button class="panel-button delete-btn"></button>
+                        <button class="panel-button open-btn"></button>
+                    </div>
+                </section>
+                <section class="list-matches__accordion">
+                    <div class="match-video"></div>
+                    <aside class="match-content">
+                        <h4 class="match-info">Дата: <span class="match-value">11.04.2022</span></h4>
+                        <h4 class="match-info">Игроки: <span class="match-value">Baka Baka, Uki Uki</span></h4>
+                        <h4 class="match-info">Продолжительность: <span class="match-value">1 час 43 минуты</span></h4>
+                        <h4 class="match-info">Счёт: <span class="match-value">2:1</span></h4>
+                    </aside>
+                </section>
+            </li>
+
+            <li class="list-matches__item">
+                <section class="list-matches__wrapper-content">
+                    <div class="list-matches__content">
+                        <h3 class="list-matches__titles id">1</h3>
+                        <h3 class="list-matches__titles name">Baka Baka</h3>
+                        <h3 class="list-matches__titles matches">1</h3>
+                        <h3 class="list-matches__titles victory">Поражение</h3>
+                    </div>
+                    <div class="list-matches__panel">
+                        <button class="panel-button share-btn"></button>
+                        <button class="panel-button delete-btn"></button>
+                        <button class="panel-button open-btn"></button>
+                    </div>
+                </section>
+                <section class="list-matches__accordion">
+                    <div class="match-video"></div>
+                    <aside class="match-content">
+                        <h4 class="match-info">Дата: <span class="match-value">11.04.2022</span></h4>
+                        <h4 class="match-info">Игроки: <span class="match-value">Baka Baka, Uki Uki</span></h4>
+                        <h4 class="match-info">Продолжительность: <span class="match-value">1 час 43 минуты</span></h4>
+                        <h4 class="match-info">Счёт: <span class="match-value">2:1</span></h4>
+                    </aside>
+                </section>
+            </li>
+        </ul>
+        <div class="list-matches__wrapper-nav">
+            <input class="list-matches__search" type="text" placeholder="Поиск">
+            <nav class="list-matches__nav">
+                <h3>стр. <span id="currentPage">1</span> из <span id="totalPages">2</span></h3>
+                <div class="navigation-pages">
+                    <button class="previous-button"></button>
+                    <button class="next-button"></button>
+                </div>
+            </nav>
+        </div>
+    </main>
+    <div class="modal-delete">
+        <div class="modal-delete__wrapper">
+            <h2 class="modal-delete__title">Удалить отчёт о матче?</h2>
+            <div class="modal-delete__wrapper-btns">
+                <button class="modal-delete__delete">Удалить</button>
+                <button class="modal-delete__cancel">Отмена</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/list-matches.js"></script>
+</body>
+</html>

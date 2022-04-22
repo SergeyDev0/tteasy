@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button, input{
+    outline: none;
+    border: none;
+    background-color: inherit;
+    color: white;
+}
+button{
+    cursor: pointer;
+}
+body{
+    background-color: #0D0F16;
+    font-family: "Rubik", sans-serif;
+    color: white;
+    z-index: 0;
+}
+img{
+    background-repeat: no-repeat;
+}
+li{
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+}
+.authorization-container, .wrapper__header-logo{
+    width: 30%;
+}
+.header-nav{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+.user-nav{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-avatar{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../img/avatar-profile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.header-notifications{
+    width: 25px;
+    height: 25px;
+    background-image: url(../icons/Notification.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 15px;
+}
+.header__nav-link{
+    margin-right: 20px;
+    font-size: 16px;
+}
+.header__nav-link:last-child{
+    margin-right: 0;
+}
+.authorization-container{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+.authorization__button-authorization{
+    color: white;
+    font-size: 16px;
+    height: fit-content;
+    margin: auto 0;
+}
+.authorization__button-registration{
+    color: #F02D68;
+    margin-left: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 2px solid #F02D68;
+    font-size: 16px;
+    padding: 14px 45px;
+    transition: .24s;
+    -webkit-transition: .24s;
+    -moz-transition: .24s;
+    -ms-transition: .24s;
+    -o-transition: .24s;
+}
+.authorization__button-registration:hover{
+    background-color: #F02D68;
+    color: white;
+}

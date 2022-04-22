@@ -1,0 +1,57 @@
+.form-authorization{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+.authorization-input, .authorization-button{
+    width: 100%;
+}
+.authorization-input{
+    height: 55px;
+    background-color: #202838;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.authorization-button{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 16px 0;
+    background-color: #F02D68;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.form-title{
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#messageMatching{
+    position: relative;
+    width: 100%;
+}
+.message-matching::after{
+    position: absolute;
+    content: 'Пароль не совпадает';
+    color: red;
+    bottom: 0px;
+    left: 5px;
+    font-size: 12px;
+}
