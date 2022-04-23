@@ -3,7 +3,7 @@ let btnShowAccordion = document.querySelectorAll('.open-btn');
 let accordion = document.querySelectorAll('.list-matches__accordion');
 btnShowAccordion.forEach(btn => {
     btn.addEventListener('click', function(){
-        $(btn.parentNode.parentNode).next().toggleClass('accordion-show');
+        btn.parentNode.parentNode.nextElementSibling.classList.toggle('accordion-show');
         $(btn.parentNode.parentNode.parentNode).toggleClass('active-item');
         $(btn).toggleClass('rotate');
     })
